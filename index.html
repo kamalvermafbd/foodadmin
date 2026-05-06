@@ -9579,7 +9579,6 @@ document.addEventListener("click", function (e) {
     ${esc(item["Section"])} • ${esc(item["Category"])}
   </div>
   
-  
     ${
       String(item["Cat2"] || "").toLowerCase() === "multi"
         ? `
@@ -9589,7 +9588,9 @@ document.addEventListener("click", function (e) {
   
           ${getVariantsByName(item["Name"]).map(v => `
             <div style="display:flex;gap:10px;font-size:13px;">
-              <span style="width:30px;">${esc(v.Unit)}</span>
+              <span style="min-width:90px;display:inline-block;">
+  ${esc(v.Unit)}
+</span>
               <span>- ${Number(v.Price || 0)}/-</span>
             </div>
           `).join("")}
@@ -9616,8 +9617,6 @@ document.addEventListener("click", function (e) {
     onclick="openManageMenu(${index})">
     ⚙️ Manage Variant
   </button>
-  
-  
     </td>
   </tr>
   `;

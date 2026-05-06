@@ -9583,14 +9583,9 @@ document.addEventListener("click", function (e) {
     ${
       String(item["Cat2"] || "").toLowerCase() === "multi"
         ? `
-      <div style="font-size:12px;color:#666;margin-top:4px;">
-    Variant (${getVariantCount(item["Name"])}) • 
-    Colors (${getColorCount(item)})
-  </div>
-  
-  <div style="font-size:12px;color:#0A7;font-weight:600;">
-    MOQ (${getMOQ(item)})
-  </div>
+    <div style="font-size:12px;color:#666;margin-top:4px;">
+  Variant (${getVariantCount(item["Name"])})
+</div>
   
           ${getVariantsByName(item["Name"]).map(v => `
             <div style="display:flex;gap:10px;font-size:13px;">

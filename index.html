@@ -1222,6 +1222,11 @@
   height: 16px;
   margin: 0;
 }
+
+      .hide-field{
+  display:none !important;
+}
+      
     </style>
   </head>
   <body>
@@ -1341,24 +1346,24 @@
     <option value="">Select Category</option>
   </select>
         </div>
-  <div class="form-row">
+ <div class="form-row hide-field">
     <label>Fabric</label>
     <input id="newItemFabric" type="text" placeholder="e.g. Cotton Blend">
   </div>
   
-  <div class="form-row">
+ <div class="form-row hide-field">
     <label>GSM</label>
     <select id="newItemGSM">
       <option value="">Select GSM</option>
     </select>
   </div>
   
-  <div class="form-row">
+ <div class="form-row hide-field">
     <label>MOQ</label>
     <input id="newItemMOQ" type="number" placeholder="MOQ">
   </div>
   
-  <div class="form-row color-row">
+  <div class="form-row hide-field">
     <label>Colors</label>
   
     <div class="multi-select-dropdown">
@@ -1476,7 +1481,7 @@
         </select>
       </div>
 
-      <div class="form-row">
+      <div class="form-row hide-field">
         <label>Fabric</label>
         <input id="updateFabric"
                type="text"
@@ -1484,14 +1489,14 @@
                >
       </div>
 
-      <div class="form-row">
+      <div class="form-row hide-field">
         <label>GSM</label>
         <select id="updateGSM"  >
           <option>Loading...</option>
         </select>
       </div>
 
-      <div class="form-row color-row">
+     <div class="form-row hide-field">
   <label>Colors</label>
 
   <div class="multi-select-dropdown">

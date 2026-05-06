@@ -1341,7 +1341,41 @@
     <option value="">Select Category</option>
   </select>
         </div>
- 
+  <div class="form-row">
+    <label>Fabric</label>
+    <input id="newItemFabric" type="text" placeholder="e.g. Cotton Blend">
+  </div>
+  
+  <div class="form-row">
+    <label>GSM</label>
+    <select id="newItemGSM">
+      <option value="">Select GSM</option>
+    </select>
+  </div>
+  
+  <div class="form-row">
+    <label>MOQ</label>
+    <input id="newItemMOQ" type="number" placeholder="MOQ">
+  </div>
+  
+  <div class="form-row color-row">
+    <label>Colors</label>
+  
+    <div class="multi-select-dropdown">
+     
+  <div id="colorDropdownBtn"
+       class="multi-select-btn"
+       onclick="toggleColorDropdown()">
+    Loading colors... ▼
+  </div>
+  
+      
+      <div id="newItemColors" class="multi-select-list" style="display:none;">
+      </div>
+    </div>
+  </div>
+    
+     
         <div class="form-row">
           <label>Description</label>
           <textarea id="newItemDescription"
@@ -1442,7 +1476,37 @@
         </select>
       </div>
 
-    
+      <div class="form-row">
+        <label>Fabric</label>
+        <input id="updateFabric"
+               type="text"
+               placeholder="Loading..."
+               >
+      </div>
+
+      <div class="form-row">
+        <label>GSM</label>
+        <select id="updateGSM"  >
+          <option>Loading...</option>
+        </select>
+      </div>
+
+      <div class="form-row color-row">
+  <label>Colors</label>
+
+  <div class="multi-select-dropdown">
+    <div id="updateColorBtn"
+         class="multi-select-btn"
+         onclick="toggleUpdateColorDropdown()">
+      Select Colors ▼
+    </div>
+
+    <div id="updateColors"
+         class="multi-select-list"
+         style="display:none;">
+    </div>
+  </div>
+</div>
       <div class="form-row">
         <label>Description</label>
         <textarea id="updateDescription"

@@ -9594,8 +9594,22 @@ document.addEventListener("click", function (e) {
               <span>- ${Number(v.MRP || 0)}/-</span>
             </div>
           `).join("")}
-        `
-        : ""
+      `
+
+      /* 🔴 CHANGED: Single item unit + MRP added */
+      : `
+        <div style="display:flex;gap:10px;font-size:13px;margin-top:4px;">
+
+          <span style="min-width:90px;display:inline-block;">
+            ${esc(item["Unit"] || "")}
+          </span>
+
+          <span>
+            - ${Number(item["MRP"] || 0)}/-
+          </span>
+
+        </div>
+      `
     }
   </td>
   
